@@ -1,0 +1,77 @@
+@import "~@/assets/global.less";
+.contact-container {
+  height: 378rem;
+  display: flex;
+  .left-layout,
+  .right-layout {
+    width: 50%;
+    height: 100%;
+  }
+  .left-layout {
+    padding-left: 60rem;
+    padding-top: 40rem;
+    box-sizing: border-box;
+    position: relative;
+    .bg();
+    .text {
+      position: relative;
+      z-index: 2;
+      .title {
+        font-size: 12rem;
+        color: #fff;
+        margin-bottom: 35rem;
+      }
+      .desc {
+        font-size: 24rem;
+        font-family: "ebgaramond-regular";
+        color: #fff;
+        margin-bottom: 15rem;
+      }
+      .info {
+        font-size: 15rem;
+        color: #fff;
+        a {
+          text-decoration: revert;
+          color: inherit;
+        }
+      }
+    }
+    .bg-img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+  .right-layout {
+    padding: 40rem 82rem 40rem 65rem;
+    box-sizing: border-box;
+    .form {
+      input {
+        width: 100%;
+        font-size: 11rem;
+        color: #000;
+        border: none;
+        outline: none;
+        border-bottom: 1rem solid #000;
+        margin-bottom: 15rem;
+        line-height: 32rem;
+        height: 32rem;
+        &::placeholder {
+          color: #000;
+        }
+      }
+      .more {
+        border: none;
+        width: 100rem;
+        margin-top: 17rem;
+        cursor: pointer;
+      }
+    }
+  }
+}

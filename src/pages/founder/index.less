@@ -1,0 +1,202 @@
+@import "~@/assets/global.less";
+.banner-container {
+  height: 400rem;
+  padding-top: 70rem;
+  box-sizing: border-box;
+  background-color: #f8f2ec;
+  position: relative;
+  .people {
+    height: 330rem;
+    position: absolute;
+    bottom: 0;
+    left: 240rem;
+  }
+  .name-text {
+    position: absolute;
+    text-align: right;
+    left: 185rem;
+    top: 145rem;
+    .name {
+      font-size: 18rem;
+      font-family: "ebgaramond-regular";
+      margin-bottom: 5rem;
+    }
+    .position {
+      font-size: 12rem;
+    }
+  }
+  .text {
+    position: absolute;
+    left: 495rem;
+    top: 145rem;
+    .title {
+      font-size: 12rem;
+      margin-bottom: 35rem;
+    }
+    .center {
+      margin-bottom: 30rem;
+      p {
+        font-size: 24rem;
+        font-family: "ebgaramond-regular";
+      }
+      span {
+        display: block;
+        font-size: 12rem;
+      }
+    }
+    .desc {
+      font-size: 15rem;
+      width: 370rem;
+    }
+  }
+}
+.founder-container {
+  width: 755rem;
+  margin: 0 auto;
+  .founder-list {
+    padding-top: 56rem;
+    .founder-item {
+      margin-bottom: 56rem;
+      display: flex;
+      .text {
+        width: calc(100% - 300rem);
+        .title {
+          font-size: 21rem;
+          margin-bottom: 22rem;
+          font-family: "ebgaramond-regular";
+        }
+        .desc {
+          font-size: 13rem;
+          line-height: 1.5;
+        }
+      }
+      .img {
+        width: 300rem;
+        height: 220rem;
+        position: relative;
+        img {
+          width: 100%;
+        }
+      }
+      &:nth-child(2n + 1) {
+        .text {
+          padding-right: 35rem;
+        }
+      }
+      &:nth-child(2n + 2) {
+        flex-direction: row-reverse;
+        .text {
+          padding-left: 35rem;
+        }
+      }
+    }
+  }
+}
+.news-container {
+  background-color: @subColor;
+  height: 350rem;
+  padding-top: 45rem;
+  box-sizing: border-box;
+  .title-module {
+    font-size: 21rem;
+    font-family: "ebgaramond-regular";
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20rem;
+  }
+  .news-box {
+    overflow: hidden;
+    .news-list {
+      display: flex;
+      flex-wrap: nowrap;
+      .news-item {
+        width: 200rem;
+        height: 200rem;
+        margin-right: 8rem;
+        flex: 1 0 auto;
+        a {
+          display: block;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+.media-container {
+  background-color: #f9f4ee;
+  padding: 40rem 0;
+  .title-module {
+    font-size: 21rem;
+    font-family: "ebgaramond-regular";
+    margin-bottom: 30rem;
+  }
+  .media-list {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1rem solid @subColor;
+    margin-bottom: 20rem;
+    .media-item {
+      width: 50%;
+      margin-bottom: 30rem;
+      padding-right: 30rem;
+      box-sizing: border-box;
+      .media-box {
+        display: flex;
+        img {
+          width: 100rem;
+          height: 100rem;
+          object-fit: cover;
+        }
+        .text {
+          padding-left: 22rem;
+          padding-top: 15rem;
+          .title{
+            font-size: 13rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color:@subColor;
+            margin-bottom: 10rem;
+          }
+          .desc{
+            font-size: 21rem;
+            font-family: "ebgaramond-regular";
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color:@subColor;
+            margin-bottom: 15rem;
+          }
+          .date{
+            font-size: 13rem;
+            font-family: "josefinsans-semibold";
+            color:#6f7c91;
+          }
+        }
+      }
+    }
+    .media-item{
+      display: none;
+    }
+    .media-item:nth-child(1),
+    .media-item:nth-child(2),
+    .media-item:nth-child(3),
+    .media-item:nth-child(4),
+    .media-item:nth-child(5),
+    .media-item:nth-child(6){
+      display: block;
+    }
+    &.show{
+      .media-item{
+        display: block;
+      }
+    }
+  }
+  .more{
+    width: 80rem;
+    margin: 0 auto;
+  }
+}

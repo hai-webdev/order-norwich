@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 引入公共页头 -->
+  <%= require("html-loader!../common/header/index.html") %>
+    <section class="contact-container">
+      <div class="left-layout">
+        <div class="text">
+          <div class="title">Contact Us</div>
+          <div class="desc">Have a project or a partnership in mind?</div>
+          <div class="info">Use the form below to get in touch or email us
+            at <a href="mailto:enquiry@norwichhk.com.">enquiry@norwichhk.com.</a></div>
+        </div>
+        <div class="bg-img">
+          <img src="/public/images/contact/img.jpg" alt="">
+        </div>
+      </div>
+      <div class="right-layout">
+        <form action="" class="form">
+          <input type="text" placeholder="Name">
+          <input type="text" placeholder="Email">
+          <input type="text" placeholder="Phone">
+          <input type="text" placeholder="Message">
+          <button class="more">
+            <span>Submit</span>
+            <img src="/public/images/home/icon-next.svg" alt="">
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- 引入公共页尾 -->
+    <%= require("html-loader!../common/footer/index.html") %>
+</body>
+
+</html>

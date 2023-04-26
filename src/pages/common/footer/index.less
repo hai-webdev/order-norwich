@@ -1,0 +1,77 @@
+@import "~@/assets/global.less";
+.footer-container {
+  .top-layout {
+    background-color: @subColor;
+    padding: 40rem 0;
+    .top {
+      display: flex;
+      margin-bottom: 30rem;
+      .logo {
+        height: 35rem;
+        display: block;
+        margin-right: 90rem;
+        img {
+          height: 35rem;
+        }
+      }
+      .info {
+        font-size: 11rem;
+        color: #fff;
+        margin-right: 85rem;
+        p {
+          margin-top: 8rem;
+        }
+      }
+      .nav-list {
+        width: 137rem;
+        .nav-item {
+          display: block;
+          font-size: 11rem;
+          color: #fff;
+          line-height: 2;
+          &:hover,
+          &.on {
+            color: @mainColor;
+            .fontBold();
+          }
+        }
+      }
+      .contact {
+        color: #fff;
+        margin-right: 90rem;
+        a {
+          color: inherit;
+          display: block;
+          line-height: 2;
+        }
+        font-size: 11rem;
+      }
+      .language {
+        font-size: 11rem;
+        color: #fff;
+        a {
+          color: inherit;
+          margin-left: 5rem;
+        }
+      }
+    }
+    .address {
+      font-size: 11rem;
+      color: #fff;
+      p {
+        margin-bottom: 5rem;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .copyright {
+    background-color: @mainColor;
+    text-align: center;
+    line-height: 30rem;
+    height: 30rem;
+    color: #fff;
+    font-size: 11rem;
+  }
+}

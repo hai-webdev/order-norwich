@@ -1,0 +1,104 @@
+@import "~@/assets/global.less";
+.pc-header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  border-bottom: 0.25rem solid #999;
+  .top-layout {
+    height: 40rem;
+    border-bottom: 0.25rem solid #999;
+    .top-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .logo {
+        display: block;
+        img {
+          height: 28rem;
+        }
+      }
+      .right-layout {
+        display: flex;
+        span {
+          display: block;
+          text-align: center;
+          padding: 0 20rem;
+          height: 40rem;
+          line-height: 40rem;
+          font-size: 11rem;
+          border-left: 0.25rem solid #999;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .bottom-layout {
+    height: 30rem;
+    .bottom-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11rem;
+      .left-layout {
+        .nav-list {
+          display: flex;
+          .nav-item {
+            height: 30rem;
+            line-height: 30rem;
+            margin-right: 30rem;
+            color: #fff;
+            &:hover,
+            &.on {
+              color: @mainColor;
+              // .fontBold();
+            }
+          }
+        }
+      }
+      .right-layout {
+        .language {
+          a {
+            color: #999;
+            margin-left: 14rem;
+            &.on {
+              color: @mainColor;
+              .fontBold();
+            }
+          }
+        }
+      }
+    }
+  }
+  &.black {
+    .top-layout {
+      .top-box {
+        .right-layout {
+          span {
+            color: @subColor;
+          }
+        }
+      }
+    }
+    .bottom-layout {
+      .bottom-box {
+        .left-layout {
+          .nav-list {
+            .nav-item {
+              color: @subColor;
+              &:hover,
+              &.on {
+                color: @mainColor;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.main-color{
+    background-color: @subColor;
+    position: relative;
+  }
+}
